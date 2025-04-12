@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://www.shutterstock.com/image-photo/clothes-on-rack-store-600nw-1692115165.jpg'); /* Replace with your background image */
+            background-size: cover;
+            background-position: center top -115px;
+background-attachment: fixed;
+            height: auto;
+            overflow-y: scroll;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #fff;
+        }
+        body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: inherit;
+  background-size: inherit;
+  background-position: center top -115px;
+  filter: blur(0px) brightness(0.5);
+  z-index: -1;
+}
+        .nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #000;
+    padding: 1.2em;
+    text-align: right;
+    z-index: 1;
+    font-size: 14px;
+    display: flex;
+    justify-content: flex-end;
+    gap: -20px;
+}
+
+.nav-bar a {
+    color: #000;
+    text-decoration: none;
+    margin-left: -20px; /* Add a small margin to move links to the right */
+    margin-right: 40px;
+}
+.nav-bar a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.nav-bar a:last-child {
+    margin-right: 10;
+}
+        
+        .about-section {
+            margin-top: 50px;
+            max-width: 1200px;
+            text-align: center;
+            padding: 20px;
+            animation: fadeIn 3s;
+            background-color: transparent;
+            margin-bottom: 50px;
+        }
+        
+        .about-section h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        
+        .about-section p {
+            font-size: 18px;
+            margin-bottom: 40px;
+            color: #fff;
+        }
+        
+        .team-members {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .team-member {
+            width: 250px;
+            text-align: center;
+        }
+        
+        .team-member img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.5s;
+        }
+        
+        .team-member img:hover {
+            transform: scale(1.1);
+        }
+        
+        .team-member h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+        
+        .team-member p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+footer p {
+            margin: 3;
+            font-size: 12px;
+        }
+
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <a href="homepage2.html">Home</a>
+        <a href="Services.html">Services</a>
+        <a href="Aboutus.html">About Us</a>
+        <a href="contactpage.html">Contact</a>
+    </div>
+    <div class="about-section">
+        <h1>About Us</h1>
+        <p>At FashionFix, we're passionate about delivering exceptional solutions that exceed our clients' expectations. With a team of dedicated professionals and a commitment to innovation, we've established ourselves as a trusted leader in our industry. Our mission is to provide top-notch services that make a lasting impact, while fostering a culture of collaboration, creativity, and continuous growth..</p>
+    </div>
+    <div class="team-members">
+        <div class="team-member">
+            <img src="C:\Users\hp\Documents\WhatsApp Image 2025-03-21 at 18.54.57_b46f7b94.jpg" alt="Team Member 1">
+            <h2>Qasim</h2>
+            <p>Founder and CEO</p>
+        </div>
+<div class="team-member">
+            <img src="C:\Users\hp\Documents\WhatsApp Image 2025-03-21 at 18.54.03_6265d075.jpg" alt="Team Member 2">
+                    <h2>Irshad ULLAH khan</h2>
+            <p>Co-Founder and CMO</p>
+        </div>
+        <div class="team-member">
+            <img src="C:\Users\hp\Documents\WhatsApp Image 2025-03-21 at 17.54.38_f68b3ae9.jpg" alt="Team Member 3">
+            <h2>Ahmed Raza</h2>
+            <p>CTO</p>
+        </div>
+        <div class="team-member">
+            <img src="C:\Users\hp\Documents\WhatsApp Image 2025-03-21 at 18.51.53_13f5bb16.jpg" alt="Team Member 4">
+            <h2>Azeem</h2>
+            <p>Marketing Manager</p>
+        </div>
+    </div>
+<footer>
+        <p>© 2025 FashionFix. All rights reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+
+</body>
+</html>

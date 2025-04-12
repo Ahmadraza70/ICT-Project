@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registrationpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #555;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .form-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            border: 2px solid #555;
+            box-shadow: 0 15px 25px rgba(255, 255, 255, 0.5);
+            width: 85%; /* Adjusted width */
+            max-width: 350px; /* Adjusted max-width */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .form-container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        label {
+            display: block;
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 5px;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="tel"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 7px;
+            border: 2px solid #ddd;
+            border-radius: 6px;
+            font-size: 14px;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 15px;
+        }
+
+        input[type="text"]:hover,
+        input[type="number"]:hover,
+        input[type="tel"]:hover,
+        input[type="email"]:hover,
+        input[type="password"]:hover,
+        input[type="date"]:hover,
+        select:hover,
+        textarea:hover {
+            border-color: #555;
+            box-shadow: 0 0 8px rgba(85, 85, 85, 0.2);
+        }
+
+        input[type="text"]:focus,
+        input[type="number"]:focus,
+        input[type="tel"]:focus,
+        input[type="email"]:focus,
+        input[type="password"]:focus,
+        input[type="date"]:focus,
+        select:focus,
+        textarea:focus {
+            border-color: #555;
+            box-shadow: 0 0 8px rgba(85, 85, 85, 0.3);
+            outline: none;
+        }
+
+        button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #555;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #333;
+            transform: translateY(-2px);
+        }
+
+        button[type="submit"]:active {
+            transform: translateY(0);
+        }
+
+        
+
+        input[type="checkbox"] {
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        label[for="terms"] {
+            display: inline;
+            font-size: 13px;
+            color: #555;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body style="background: url('https://www.shutterstock.com/image-photo/clothes-on-rack-store-600nw-1692115165.jpg') no-repeat center center fixed; background-size: cover;">
+    
+    <div class="form-container">
+        <form>
+                    <h1>Get Started</h1>
+            <div>
+                <label for="name">Name</label>
+                <input id="name" type="text" placeholder="Enter Name" required>
+            </div>
+                       <div>
+                <label for="name">Username</label>
+                <input id="name" type="text" placeholder="Enter Username" required>
+            </div>
+
+            <div>
+                <label for="gender">Gender</label>
+                <select id="gender" required>
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div>
+                <label for="dob">Date of Birth</label>
+                <input id="dob" type="date" required>
+            </div> 
+                 <div>
+                <label for="ph">Phone</label>
+                <input id="ph" type="tel" placeholder="Enter Number" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Enter Email" required>
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input id="password" type="password" placeholder="Enter Password" required>
+            </div>
+                   <br>
+            <div>
+                <input id="terms" type="checkbox" required>
+                <label for="terms">I have read the <a href="abcd">Privacy policiy</a> of your services carefully and I Agree to <a href="abcd"> terms and conditions</a>.</label>
+            </div>
+                   <br>
+                        <br>
+                        <div>
+                <button type="submit"> Create account</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
